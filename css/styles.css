@@ -1,0 +1,493 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Using a clean, modern font */
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark text for good readability */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Slightly more modern font for headers */
+    color: #333;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Links Styling */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+    color: #007bff;
+}
+
+/* Utility Classes */
+.shadow-sm {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.shadow-project {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.border-0 {
+    border: none;
+}
+
+.bg-light {
+    background-color: #f8f9fa;
+}
+
+/* Container Padding */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* General Margin and Padding */
+.py-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* navigation part */
+
+
+/* Skill Button Hover Effect */
+#skills .btn:hover {
+    color: #fff; /* Change text color to white */
+    transform: scale(1.1); /* Enlarge button when hovered */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow when hovered */
+}
+
+.navbar {
+    background-color: #ffffff; /* White background for navbar */
+    padding: 15px 0; /* Increase the padding for a larger navbar */
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2); /* Slight shadow to make the navbar stand out */
+}
+
+.navbar-brand {
+    font-size: 1.8rem; /* Larger font size for the brand name */
+    font-weight: bold; /* Make the brand name bold */
+    color: #333; /* Dark color for the brand text */
+}
+
+
+.navbar-toggler {
+    border-color: #007bff; /* Change color of the toggler icon */
+}
+
+.navbar-toggler-icon {
+    background-color: #007bff; /* Color of the toggler icon */
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 1.1rem; /* Increase the font size for the navigation links */
+    font-weight: bold; /* Slightly bold for better visibility */
+    color: #333; /* Dark text color */
+    padding: 10px 15px; /* Add padding for better clickability */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link:focus {
+    color: #ffffff; /* Change text color on hover/focus */
+    background-color: #003366; /* Deep ocean blue on hover */
+    border-radius: 5px; /* Rounded corners for hover effect */
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Welcome to My Portfolio Section */
+#welcome {
+    background-color: #ffffff; /* White background */
+    padding: 80px 0; /* Extra padding for spacing */
+}
+
+#welcome .card {
+    border: none;
+    overflow: hidden;
+}
+
+#welcome .card-img-top {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Slight border radius for the image */
+}
+
+#welcome .col-md-6 {
+    margin-bottom: 30px;
+}
+
+#welcome h2 {
+    font-size: 3rem; /* Large heading */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#welcome .lead {
+    font-size: 1.5rem; /* Slightly larger text for the intro */
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#welcome p {
+    font-size: 1rem; /* Regular text size */
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#welcome .btn {
+    font-size: 1.2rem; /* Button size */
+    padding: 12px 30px; /* Button padding */
+    text-decoration: none;
+}
+
+/* Walking Text Animation */
+@keyframes walk-in {
+    0% {
+        transform: translateX(-100%); /* Start from off-screen left */
+        opacity: 0; /* Invisible at the start */
+    }
+    50% {
+        opacity: 0.5; /* Slightly visible halfway */
+    }
+    100% {
+        transform: translateX(0); /* End at original position */
+        opacity: 1; /* Fully visible at the end */
+    }
+}
+
+/* Apply walking animation to elements */
+.walking-text {
+    animation: walk-in 5s ease-out;
+    animation-delay: 8s;
+    animation-fill-mode: both;
+    display: inline-block; /* Ensures each word gets colored individually */
+}
+
+/* Apply colors to each element */
+h2.walking-text {
+    animation: walk-in 2s ease-out;
+    color: #ff5733; /* A vibrant orange color for the heading */
+}
+
+p.walking-text {
+    animation: walk-in 2s ease-out;
+    animation-delay: 1s; /* Delay for the paragraph */
+    color: #33b5ff; /* A cool blue color for the paragraph */
+}
+
+a.walking-text {
+    animation: walk-in 2s ease-out;
+    animation-delay: 1.5s; /* Delay for the button */
+    color: #28a745; /* A fresh green color for the button */
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    border: 2px solid #28a745; /* Matching border color for button */
+}
+
+/* Add hover effect for the button */
+a.walking-text:hover {
+    background-color: #28a745;
+    color: white; /* Change text color to white on hover */
+    transform: scale(1.05); /* Slight zoom-in effect on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* skills section */
+#skills .card {
+    border: none; /* Remove card borders */
+    border-radius: 8px; /* Round corners for cards */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow for cards */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Card Hover Effect */
+#skills .card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow when card is hovered */
+    transform: translateY(-5px); /* Slightly lift the card on hover */
+}
+
+/* Skill Button Styles */
+#skills .btn {
+    font-size: 1.1rem; /* Font size for buttons */
+    margin-top: 10px;
+    padding: 10px 20px; /* Add padding to buttons */
+    border: 2px solid transparent;
+    background-color: transparent; /* No background color by default */
+    color: #333; /* Dark text color */
+    border-radius: 8px; /* Rounded corners for buttons */
+    transition: all 0.3s ease; /* Smooth transition for button hover effects */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow for buttons */
+}
+
+/* Skill Button Hover Effect */
+#skills .btn:hover {
+    background-color: #003366; /* Deep ocean blue on hover */
+    color: #fff; /* Change text color to white */
+    transform: scale(1.1); /* Enlarge button when hovered */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow when hovered */
+}
+
+/* Font Awesome Icon Styles */
+#skills .btn i {
+    margin-right: 8px; /* Add space between the icon and the button text */
+}
+
+/* Card Title Customization */
+#skills .card-title {
+    font-size: 1.2rem; /* Increase font size for card titles */
+    font-weight: bold;
+    text-align: center; /* Center-align the card titles */
+    color: #333; /* Dark color for the title text */
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    #skills .card {
+        padding: 15px; /* Reduced padding for smaller screens */
+    }
+
+    #skills .btn {
+        font-size: 1rem; /* Smaller buttons on mobile */
+        padding: 8px 16px; /* Adjust button size on mobile */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styling the Contact Details div */
+#contact .col-md-6:first-child {
+    
+    border-radius: 12px; /* Rounded corners for the contact details container */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow around the contact details container */
+    padding: 20px; /* Add padding to the container */
+    background-color: #fff; /* Ensure background is white */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover Effect for the Contact Details Container */
+#contact .col-md-6:first-child:hover {
+    transform: translateY(-10px); /* Lift the container on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Styling the contact details list items */
+#contact .list-unstyled li {
+    margin-bottom: 15px; /* Space between each item */
+    font-size: 1.1rem; /* Slightly larger font */
+}
+
+/* Contact Details Links */
+#contact .list-unstyled a {
+    color: #333; /* Default text color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Contact Details Links on Hover */
+#contact .list-unstyled a:hover {
+    color: #007bff; /* Change text color to blue on hover */
+}
+
+/* Styling the icons in the contact details */
+#contact .list-unstyled i {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styling the form */
+#contact .col-md-6:last-child {
+    border-radius: 12px; /* Rounded corners for the form container */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow around the form container */
+    padding: 20px; /* Add padding to the container */
+    background-color: #fff; /* Ensure background is white */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  
+}
+
+/* Hover Effect for the Form Container */
+#contact .col-md-6:last-child:hover {
+    transform: translateY(-10px); /* Lift the container on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Ensuring the form input fields and button follow a consistent design */
+#contact .form-control {
+    border-radius: 8px; /* Rounded corners for the inputs */
+    box-shadow: none; /* Remove the default box shadow */
+}
+
+/* Form Input Focus Effect */
+#contact .form-control:focus {
+    border-color: #007bff; /* Blue border when focused */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25); /* Soft blue glow on focus */
+}
+
+/* Styling the form submit button */
+#contact .btn-dark {
+    background-color: #343a40;
+    border: none;
+    border-radius: 8px; /* Rounded corners for the button */
+    padding: 12px 20px; /* Button padding */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Button hover effect */
+#contact .btn-dark:hover {
+    background-color: #003366; /* Deep ocean blue on hover */
+    transform: translateY(-3px); /* Lift the button slightly */
+}
+
+
+/* #contact .row {
+    gap: 30px; /* This will add horizontal space between the two columns */
+ 
+
+
+    #contact .row {
+        display: flex; /* Use Flexbox to arrange items horizontally */
+        justify-content: space-between; /* Push items to the left and right */
+        gap: 0; /* Ensure no extra gap unless desired */
+    }
+    
+    #contact .col-md-6 {
+        flex: 0 0 48%; /* Ensure each column takes about half the row width with space in between */
+    }
+hr{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-style:dashed;
+
+}   
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Section */
+.footer {
+    background-color: #4a4a4a; /* Solid grey */
+    font-size: 1.2rem; /* Slightly larger text for the footer */
+    padding: 60px 0; /* Increased padding for a larger footer */
+    color: white; /* Ensure text is visible on grey background */
+}
+
+.footer .social-icons a {
+    font-size: 1.8rem; /* Larger icon size for visibility */
+    color: yellow; /* Yellow color for the icons */
+    margin: 0 10px; /* Space between the icons */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.footer .social-icons a:hover {
+    color: #1aff00; /* Bright green color on hover */
+    transform: scale(1.1); /* Slight zoom-in effect on hover */
+}
+
+.footer p {
+    margin: 0; /* Ensure no extra spacing around the paragraph */
+    font-size: 1rem; /* Standard text size for footer text */
+}
